@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia Dos Namorados</title>
+
+
+    <style>
+        
+        .escrita{
+            margin: auto;
+            width: 300px;
+            height: 40px;
+            border-radius: 100px;
+            text-align: center;
+        }
+        .painel{
+            margin: auto;
+            background-image: url(./imagens/painel.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 20%;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #sim{
+            height: 40px;
+            width: 50px; 
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+        #nao{
+            position: absolute;
+            height: 40px;
+            width: 50px;
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+        }
+        
+    </style>
+
+</head>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+        body{
+
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./imagens/teste\ de\ fotos[.jpg);
+            background-size: auto;
+            background-position: center;
+            
+            
+        }
+        
+
+    </style>
+<body>
+
+    <div class="painel">
+        <h1 style="color: white;"> Feliz Dia dos Namorados</h1>
+
+
+        <img src="https://i.pinimg.com/originals/f3/12/8f/f3128f57dba2e76e2c27cf1d23035ef0.png" alt="">
+
+
+        <div class="escrita"
+         <h2 style="color: white;"> Aceitas passar o nosso primeiro dia dos namorados juntos? </h2>
+         </div>
+
+        
+
+        <a href="https://www.instagram.com/kakaduda_priv/"><button id="sim" > Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+        
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
